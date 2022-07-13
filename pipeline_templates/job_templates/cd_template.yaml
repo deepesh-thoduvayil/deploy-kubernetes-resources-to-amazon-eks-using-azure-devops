@@ -60,7 +60,7 @@ jobs:
                   --create-namespace \
                   --install \
                   --wait \
-                  --timeout 180 #added by Deepesh
+                  --timeout 180 \ #added by Deepesh
                   --version $(helmChartVersion) \
                   --set application.name=${{ parameters.projectName }} \
                   --set image.repository=$(repositoryURI) \
