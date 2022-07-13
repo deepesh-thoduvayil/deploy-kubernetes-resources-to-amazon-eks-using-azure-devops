@@ -54,7 +54,11 @@ jobs:
                 echo 'Deploy Helm chart to EKS...'
                 chartPackage=${{ parameters.projectName }}-$(helmChartVersion).tgz
                 echo $(pwd)
+                echo "helmChartVersion - $(helmChartVersion)"
+                echo "K8sNamespace - $(K8sNamespace)"
+                echo "Build.BuildNumber - $(Build.BuildNumber)"
                 echo "chart package to be installed - $chartPackage"
+
                 helm upgrade \
                   --namespace $(K8sNamespace) \
                   --create-namespace \
