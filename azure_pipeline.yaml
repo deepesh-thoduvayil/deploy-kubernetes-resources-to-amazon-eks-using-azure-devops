@@ -19,5 +19,5 @@ stages:
   parameters:
     serviceConnectionName: aws_connection
     awsRegion: us-east-1
-    awsEKSClusterName: sandbox
+    awsEKSClusterName: sandbox1
     projectName: webapp
