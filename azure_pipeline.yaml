@@ -17,7 +17,7 @@ stages:
 # Refering the pipeline template, input parameter that are not specified will be added with defaults
 - template: ./pipeline_templates/main_template.yaml
   parameters:
-    serviceConnectionName: terraform-demo-connection
+    serviceConnectionName: aws-connect
     awsRegion: us-east-1
     awsEKSClusterName: Dev-stackgenie-1d93
     projectName: webapp
