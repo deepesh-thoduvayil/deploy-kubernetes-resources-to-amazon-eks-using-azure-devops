@@ -19,5 +19,5 @@ stages:
   parameters:
     serviceConnectionName: aws-connect
     awsRegion: us-east-1
-    awsEKSClusterName: Dev-stackgenie-1d93
+    awsEKSClusterName: ado-devops-cluster
     projectName: webapp
